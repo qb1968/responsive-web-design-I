@@ -53,6 +53,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    width: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-wrap: wrap;
     margin:auto 0;
-    width: 100%; 
+    width: auto;
  }
 
   /* background-color: powderblue; 
@@ -98,7 +99,7 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     align-items: center;
     margin:auto 0;
-    margin-top:25px;
+    /* margin-top:25px; */
 	/* margin:100px;
 	width: 70%;
 	height: 20px;
@@ -127,7 +128,7 @@ h1, h2, h3, h4, h5 {
     
 	line-height: 1.5;
     font-size: medium;
-    /* margin-bottom: 10%; */
+    margin-bottom: 10%; 
 	 
 	/* margin:auto 0;
 	width: 75%;
@@ -166,10 +167,12 @@ h1, h2, h3, h4, h5 {
 	/*border: 2px solid black; */
 	/* text-align: center; */
     /* margin-bottom:50px;*/
-    .bigpic{
-        display: flex;
-      justify-content: center;
-      margin-bottom: 5%;
+ .big{
+       display: block;
+       justify-content: center;
+     padding: 25px;
+      margin:auto 0;
+      
     }
    
    .midpic{
@@ -219,10 +222,11 @@ h1, h2, h3, h4, h5 {
        
         
     }
-    .navigation a{
+    .navigation {
+
         color:black
     }
-    .bigpic{
+    .big{
         display:none;
     }
 
@@ -248,12 +252,12 @@ h1, h2, h3, h4, h5 {
 .navigation {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    /* height:50px; */
+    justify-content: space-between;
+    align-items: center; 
+     height:50px; 
     
-    width:100%;
-	word-spacing: 50px;
+    width:auto;
+	/* word-spacing: 50px; */
 	font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
     		
@@ -261,7 +265,7 @@ h1, h2, h3, h4, h5 {
 header{
     display: flex;
     flex-direction: column;
-    
+    width: auto;
     margin: auto 0;
 }
 .navigation a{
