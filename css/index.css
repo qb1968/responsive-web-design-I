@@ -65,18 +65,22 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
  * {
-	box-sizing: border-box;
-    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid gray;
+    border: 1px solid gray; */
   
 }
  .container{
     display: flex;
     flex-wrap: wrap;
+    margin:auto;
+    width:100%;
+    /* flex-wrap: wrap;
     margin:auto 0;
-    width: auto;
+    width: auto; */
  }
 
   /* background-color: powderblue; 
@@ -89,7 +93,8 @@ h1, h2, h3, h4, h5 {
 	word-spacing: 50px;
 	font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
-    		
+    margin-bottom: 5%;
+border:2px black;
 }
 .navigation a{
     color:black
@@ -97,18 +102,31 @@ h1, h2, h3, h4, h5 {
 .header{
     display: flex;
     flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
-    margin:auto 0;
+    
+     margin:auto ;
     /* margin-top:25px; */
 	/* margin:100px;
 	width: 70%;
 	height: 20px;
 	padding: 5px; */
 	font-size: 60px;
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
 }
+    .in, .on, .demand{
+        font-size: 60px;
+    }
+
 .top-content{
     display:flex;
+    line-height: 1.5;
+    margin: auto;
+    font-size: medium;
+    /* margin-bottom: 10%; */
+    /* display:flex;
     
   justify-content: center;
     margin-top: 50px;
@@ -118,15 +136,20 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 5%;
     align-items: center;
 	 
-	
+	 */
+}
+.line1{
+    border:2px black;
 }
 
 
 .bottom-content{
-	display: flex;
+    display: flex;
+	/* display: flex;
     justify-content: center;
-    
-	line-height: 1.5;
+     */
+    line-height: 1.5;
+    margin: auto;
     font-size: medium;
     margin-bottom: 10%; 
 	 
@@ -135,10 +158,12 @@ h1, h2, h3, h4, h5 {
 	height: 190px; */
 }
 .contact{
-	display: inline-block;
-	margin:100px;
-	width: 10%;
-	height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin:auto;
+	width: 200px;
+	height: 100px;
 	padding: 5px;
 	text-align: center;
 }.footer{
@@ -155,12 +180,17 @@ h1, h2, h3, h4, h5 {
      align-items: center; 
 }
 .start{
-    display: flex;
+     display: flex;
     
-    align-items: center;
-    justify-content: center;
+  margin: auto;  
+  margin-bottom: 5%;
  font-size: 35px;
-    
+ border:solid 2px black;
+ width:200px;
+ background: grey;
+ 
+    justify-content: center;
+    align-items: center;
 }
 	/* width: 75%;
 	height: 190px; */
@@ -168,17 +198,16 @@ h1, h2, h3, h4, h5 {
 	/* text-align: center; */
     /* margin-bottom:50px;*/
  .big{
-       display: block;
-       justify-content: center;
-     padding: 25px;
+  
       margin:auto 0;
-      
+      margin-bottom: 5%;
     }
    
    .midpic{
        display:flex;
        justify-content: center;
        width:100%;
+       margin-top: 5%;
        margin-bottom: 5%;
    }
 
@@ -223,11 +252,22 @@ h1, h2, h3, h4, h5 {
         
     }
     .navigation {
-
+        height:120px;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+}
         color:black
-    }
+        .header{
+            font-size: auto;
+        }
+    
     .big{
         display:none;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -246,17 +286,18 @@ h1, h2, h3, h4, h5 {
         justify-content: space-evenly;
         width:100%;
     }
-    
-    
+        
 
 .navigation {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+     display: flex; 
+     flex-direction: column-reverse; 
+    justify-content: center;
     align-items: center; 
-     height:50px; 
-    
-    width:auto;
+    margin: auto;
+     /* height:50px; */
+     height:150px;
+    /* width:100%; */
+    scroll-margin-bottom: 5%;
 	/* word-spacing: 50px; */
 	font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
@@ -277,7 +318,8 @@ header{
  a{
     
     border-bottom: 2px solid gray;
-    width:50%;
+    width:100%;
+    
      justify-content: center; 
     
 }
